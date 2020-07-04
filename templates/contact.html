@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+<h1 class="text-center">Contactanos</h1>
+
+<div class="container">
+  <div id="foot" class="jumbotron h5">
+  {% for social in socials %}
+    
+    <li class="text-decoration-none">
+      <a href="{{ social.path }}">
+        <i class="{{ social.icon }}"></i>
+        {{'  ' + social.title }}
+      </a>
+    </li>
+  {% endfor %}  
+  </div>
+</div>
+
+<h1 class="text-center">Siguenos</h1>
+
+<div class="container">
+  <div id="foot" class="jumbotron h5">
+  {% for social in socials %}
+    
+    <li class="text-decoration-none">
+      <a href="{{ social.path }}">
+        <i class="{{ social.icon }}"></i>
+        {{'  ' + social.title }}
+      </a>
+    </li>
+    
+  {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
