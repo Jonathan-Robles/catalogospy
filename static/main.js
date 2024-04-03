@@ -245,7 +245,7 @@ setTimeout(showSlides, 4000); // Change image every 4 seconds
 
 
 
-90
+
 
 
 innerMenu(header,menuIcons);
