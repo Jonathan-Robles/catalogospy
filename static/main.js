@@ -132,7 +132,7 @@ var cont = 0;
 var setCls = function(x){ return ' class="' + x + '"'}
 var setStyle = function(x){ return ' style="' + x + '"'} 
 var setHref = function(x){ return ' href="' + x + '"'}
-var setSrc = function(x){ return ' src="' + x + '"'}
+var setSrc = function(x){ return " src='" + x + "'"}
 var setId = function(x){ return ' id="' + x + '"'}
 var setOnClk = function(x){ return ' onclick="' + x + '"'}
 
@@ -186,7 +186,7 @@ function innerCatalogos(id, list, heading)
 {       let x = setMainBoxCard(id, heading);
     list.forEach(function(item){
         let div_attr = setCls('w3-container ') + setOnClk(item.url) ; 
-        let content = createElem2('img', setSrc( item.imges ), + item.img) +
+        let content = createElem2('img', setSrc( "static/Images/" + item.imges ),  item.img) +
                    createElem2('p'   ,'', item.txt);      
 
         x.innerHTML += createElem2('div', div_attr, content) + createElem2('hr');            
@@ -197,7 +197,7 @@ function innerCatalogos(id, list, heading)
 function innerSlideshow(id, list, heading)
 {       let x = setMainBox(id, heading);
     list.forEach(function(item){ ///      Bucle forEach()→
-        let img =   createElem2('img', setCls('promo') + src(item.image)) ;
+        let img =   createElem2('img', setCls('promo') + src("static/Images/" +item.image)) ;
         let text =  createElem2('h1', '',item.title ) + 
                     createElem2('h4', '', item.senten ) +
                     createElem2('button', setCls('w3-btn w3-red') ,'Ver Cat&aacutelogos') ;

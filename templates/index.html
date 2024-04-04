@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" type="text/css"/>
-  
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" type="text/css"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
-	
-	 <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='w3.css')}}">
-	
-	 <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='basic.css')}}"> 
-	
+	<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='w3.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='basic.css')}}"> 
 	<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='styles.css')}}">		
 	<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='fontawesome.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='all.css')}}">
@@ -29,7 +25,7 @@
 
 {% endblock %}
 
- {% include "includes/_footer.html"%}
+
  
 <div id="header">
   
@@ -50,7 +46,7 @@
 
 <div id="wrapper"></div>
 
-
+ {% include "includes/_footer.html"%}
 
 </body>
 

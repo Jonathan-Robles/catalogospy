@@ -57,7 +57,7 @@ function get_images(y, n)
 	var f1_Set ='';
 		for (var i = 0; i <= n; i++)	
 		{	
-			f1_Set += '<img class="caption" src="logo.png"><img class="passing" src="'+ y + i +'.png" style="width:100%">';
+			f1_Set += '<img class="caption" src="logo.png"><img class="passing" src="static/Images/'+ y + i +'.png" style="width:100%">';
 	 	}	
 			f1_Set += '<img src="marco.png" style="position:absolute; top:0; width: 100%;z-index:2;">';
 				
